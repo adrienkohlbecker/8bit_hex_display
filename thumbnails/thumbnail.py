@@ -9,6 +9,7 @@ playlist_height = 360
 episodes = [
     'Introduction',
     'Basics\nDecimal display',
+    'MC14495\nhexadecimal decoder'
 ]
 
 path = './thumbnails/'
@@ -16,7 +17,7 @@ pathfmt = path + '{:d}.{}'
 
 for num, episode in enumerate(episodes, start=0):
 
-    if num < 1:
+    if num < 2:
         continue
 
     with Image.open(pathfmt.format(num, 'png')) as im:
